@@ -2,8 +2,12 @@ import React, { lazy, Suspense } from "react";
 import "../../App.css";
 import "./Home.css";
 
-const CircleTextWrap = lazy(() => import("../../components/CircleTextWrap/CircleTextWrap"));
-const QEVCircleTextWrap = lazy(() => import("../../components/CircleTextWrap/QEVCircleTextWrap"));
+const CircleTextWrap = lazy(() =>
+  import("../../components/CircleTextWrap/CircleTextWrap")
+);
+const QEVCircleTextWrap = lazy(() =>
+  import("../../components/CircleTextWrap/QEVCircleTextWrap")
+);
 
 function HomeCard() {
   const coinOptions = [

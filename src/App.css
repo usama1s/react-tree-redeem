@@ -8,22 +8,22 @@
 }
 
 body {
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .App {
   width: 100%;
   flex-grow: 1;
-  overflow: clip;
+  overflow: auto;
   z-index: 0;
-
+  white-space: nowrap;
 }
-.App{
-  max-height: calc(100vh - 8vw - 24px);
-margin-top: auto;
+.App {
+  /* max-height: calc(100vh - 8vw - 24px); */
+  margin-top: auto;
 }
-@media screen and (min-width: 1500px){
-  .App{
+@media screen and (min-width: 1500px) {
+  .App {
     max-height: calc(100vh - 8vw - 32px);
   }
 }
@@ -34,21 +34,22 @@ margin-top: auto;
   }
 }
 
-
-@media screen and (max-width: 1000px){
-  .App{
+@media screen and (max-width: 1000px) {
+  .App {
+    margin-top: 8%;
     max-height: calc(100vh - 8vw - 0px - 22px);
   }
 }
 
-@media(max-width: 500px){
-.App{
-  max-height: calc(100vh - 28vw - 0px - 22px)
-}
+@media (max-width: 500px) {
+  .App {
+    margin-top: 35%;
+    max-height: calc(100vh - 28vw - 0px - 22px);
+  }
 }
 
 .overlay-background {
-	background-image: url('./assets/overlay-background.png');
+  background-image: url("./assets/overlay-background.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -97,9 +98,9 @@ margin-top: auto;
 }
 
 /* MOBILE VERSION */
-@media(max-width: 479px){
+@media (max-width: 479px) {
   #root {
-    border: none !important
+    border: none !important;
   }
 
   body {
@@ -111,8 +112,5 @@ margin-top: auto;
 }
 
 .lig {
-  font-feature-settings: "dlig" 1,"kern" 1;
+  font-feature-settings: "dlig" 1, "kern" 1;
 }
-
-
-

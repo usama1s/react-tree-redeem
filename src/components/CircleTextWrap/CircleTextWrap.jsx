@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import { ReactComponent as CircleImage } from '../../assets/Vector.svg';
-import { useWindowSize } from '../../hooks/useWindowSize';
+import { Link } from "react-router-dom";
+import { ReactComponent as CircleImage } from "../../assets/Vector.svg";
+import { useWindowSize } from "../../hooks/useWindowSize";
 import "./CircleTextWrap.css";
 
 /**
@@ -23,7 +23,7 @@ function CircleTextWrap({ children }) {
         <div className="overlay-background" />
         <img
           src="/nav-rings/redeem-circle.png"
-          className="absolute top-1/2 left-1/2 md:scale-95 text-ring"
+          className="absolute top-0 left-0 p-2 xl:top-1/2 xl:left-1/2 lg:scale-95 text-ring "
         />
         <div
           className={`
