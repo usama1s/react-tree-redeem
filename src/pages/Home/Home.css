@@ -1,0 +1,66 @@
+/**
+
+CSS Styles for Home and Box Container
+@class
+*/
+
+.home .box {
+    max-height: 236px;
+    min-height: 236px;
+    display: flex;
+    align-items: center;
+flex-direction: column;
+justify-content: center;
+border: 1px solid var(--text-primary);
+}
+
+.home__cta{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--text-primary);
+    font-weight: 400;
+    font-family: 'Romie';
+}
+
+.home__cta__name{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 5vw;
+    color: var(--text-primary);
+    font-family: 'Romie';
+}
+
+.box-container__left {
+    width: 50%;
+}
+
+.box-container__right{
+    width: 50%;
+}
+
+
+
+@media(max-width: 900px){
+    .box-container__left {
+        width: 100%;
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        
+    }
+    .redeem-container-card {
+        margin: 10px;
+    }
+    .redeem-container-card > a {
+        min-height: 140px;
+    }
+    
+    .box-container__right{
+        width: 100%;
+    }
+
+    .box-container-section {
+    flex-direction: column !important;
+    }
+}

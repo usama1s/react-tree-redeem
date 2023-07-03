@@ -1,0 +1,125 @@
+.redeem-card {
+	border-color: var(--text-primary);
+	grid-row-gap: 1vw;
+}
+.redeem-card h3 {
+	font-size: 1.2vw;
+}
+
+.redeem-link {
+	--gap: 4px;
+	--border: 1px;
+	--color: var(--text-primary);
+	--_color: transparent 0 25%, var(--color) 0 50%;
+	--_g1: repeating-linear-gradient(90deg, var(--_color)) repeat-x;
+
+	padding: calc(var(--gap) + var(--border));
+	background: var(--_g1) var(--_p, 300%) 100%;
+	background-size: 400% var(--border);
+	transition: 1.5s cubic-bezier(.18,.71,.85,.2);
+
+	margin-bottom: 0.4vw;
+    font-family: Romieligatures,'Times New Roman',sans-serif;
+    color: #ded4bf;
+    font-size: 1vw;
+    line-height: 1vw;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: .3vw;
+    text-transform: uppercase;
+}
+
+.redeem-link:hover {
+	--_p: 233%;
+}
+
+.redeem-card-heading{
+	font-feature-settings: "dlig" 1,"kern" 1;
+	margin-top: 0;
+    margin-bottom: 0;
+    font-family: Romieligatures,'Times New Roman',sans-serif;
+    color: #ded4bf;
+    font-size: 5vw;
+    line-height: 4vw;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0;
+    text-transform: uppercase;
+	/* padding-bottom: 1vw; */
+}
+
+.redeem-card-heading-2{
+	margin-top: 0;
+    margin-bottom: 0;
+    font-family: Romieligatures,'Times New Roman',sans-serif;
+    color: #ded4bf;
+    font-size: 13vw;
+    line-height: 13vw;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+.redeem-card-heading-2 small{
+	font-size: 1.2vw;
+}
+
+.redeem-card-heading-3{
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+    font-family: 'Cardinalclassiclongweb trial','Times New Roman',sans-serif;
+    color: #ded4bf;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    font-weight: 400;
+    text-align: justify;
+	margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+
+/* .redeem-link:before {
+	content: "";
+	background-image: url('../assets/overlay-background.png');
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	height: 1px;
+	width: 100%;
+	transform: translateX(-100%);
+} */
+
+/* .redeem-link:hover:before {
+	transform: translateX(0);
+} */
+
+/*MOBILE VERSION */
+@media(max-width: 479px){
+	.redeem-card h3 {
+		font-size: 2.5vw;
+		line-height: 4vw;
+	}
+	
+	.redeem-card h5 {
+		font-size: 9vw;
+    line-height: 7.5vw;
+	}
+
+	.redeem-card-heading-2 h5{
+		font-size: 18vw;
+		line-height: 18vw;
+	}
+	.redeem-card-heading-2 small {
+		font-size: 2.5vw;
+    line-height: 4vw;
+	}
+	.redeem-link {
+		font-size: 3vw;
+		line-height: 3vw;
+	}
+
+	.redeem-card-heading-3{
+		font-size: 4vw;
+		line-height: 4.5vw;
+	}
+}
+
